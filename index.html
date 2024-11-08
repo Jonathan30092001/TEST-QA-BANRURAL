@@ -90,7 +90,7 @@ if(isNaN(userGuess)) {
     guessField.value = '';
     guessField.focus();
   }
-  guessSubmit.addeventListener('click', checkGuess);
+  guessSubmit.addevEntListener('click', checkGuess);
 
   function setGameOver() {
 	  guessField.disabled = true;
@@ -98,7 +98,7 @@ if(isNaN(userGuess)) {
 	  resetButton = document.createElement('button');
 	  resetButton.textContent = 'Comienza un nuevo juego';
 	  document.body.appendChild(resetButton);
-	  resetButton.addeventListener('click', resetGame);
+	  resetButton.addevEntListener('click', resetGame);
   }
 
   function resetGame() {
